@@ -9,15 +9,23 @@ public class Tortilla {
     private String nombre;
     private double precio;
     
-    public Tortilla(){
-        
-    }
-    public Tortilla(int id, String nombre, double precio){
-        this.id=id;
-        this.nombre=nombre;
-        this.precio=precio;
+    //constructor vacio
+    public Tortilla(){    
     }
     
+    //constructor para agregar
+    public Tortilla(String nombreTipoT, double precioTipoT) {
+        this.nombre = nombreTipoT;
+        this.precio = precioTipoT;
+    }
+    
+     //constructor para actualizar
+    public Tortilla(int idtipoT, String nombreTipoT, double precioTipoT) {
+        this.id = idtipoT;
+        this.nombre = nombreTipoT;
+        this.precio = precioTipoT;
+    } 
+
     public int getId(){
      return id;   
     }

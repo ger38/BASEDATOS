@@ -15,8 +15,7 @@ public class Taco {
     public Taco(){
         
     }
-   public Taco(int id, double precio){
-       this.id=id;
+   public Taco( double precio){
        this.precio=precio;
    } 
    public int getId(){

@@ -1,14 +1,18 @@
-
 package modelo;
+
 import java.util.Objects;
 
-class Salsa {
+ public class Salsa {
     private int id;
     private String nombre;
     private double precio;
     
     public Salsa(){
         
+    }
+    public Salsa(String nombre, double precio){
+        this.nombre=nombre;
+        this.precio=precio;
     }
     public Salsa(int id, String nombre, double precio){
         this.id=id;

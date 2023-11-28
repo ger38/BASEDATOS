@@ -9,10 +9,15 @@ public class Alimento {
     private String nombre;
     private double precio;
     
-    public Alimento(){   
+    public Alimento(){  //CONSTRUCTOR VACIO 
     }
     
-    public Alimento(int id, String nombre, double precio){
+    public Alimento(String nombre, double precio){//CONSTRUCTOR PARA AGREGAR
+        this.nombre=nombre;
+        this.precio=precio;
+    }
+    
+    public Alimento(int id, String nombre, double precio){//CONSTRUCTOR PARA ACTUALIZAR
         this.id=id;
         this.nombre=nombre;
         this.precio=precio;
